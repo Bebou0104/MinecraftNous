@@ -332,20 +332,6 @@
           "src/main/java/net/mcreator/lesthonsrouges/item/WeathermakerItem.java"
         ]
       }
-    },
-    {
-      "name": "Batterie",
-      "type": "item",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "batterie",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lesthonsrouges/item/BatterieItem.java",
-          "src/main/resources/assets/les_thons_rouges/models/item/batterie.json"
-        ]
-      }
     }
   ],
   "variable_elements": [],
@@ -358,7 +344,6 @@
       "item.les_thons_rouges.uraniumarmure_chestplate": "Plastron en Uranium",
       "block.les_thons_rouges.uraniumblock": "block d\u0027Uranium",
       "item.les_thons_rouges.rafura": "Uranium brut",
-      "item.les_thons_rouges.batterie": "Batterie",
       "item.les_thons_rouges.weathermaker": "Weathermaker2000",
       "item.les_thons_rouges.uraniumsword": "épée d\u0027Uranium",
       "item.les_thons_rouges.allorfer": "Alliage d\u0027or et de fer",
