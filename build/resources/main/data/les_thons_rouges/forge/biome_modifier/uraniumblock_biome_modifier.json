@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "les_thons_rouges:uraniumblock",
+  "step": "underground_ores"
+}

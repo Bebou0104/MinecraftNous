@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "1": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "2": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "4": {
+      "item": "les_thons_rouges:ironstick"
+    },
+    "7": {
+      "item": "les_thons_rouges:ironstick"
+    }
+  },
+  "result": {
+    "item": "les_thons_rouges:uraniumpickaxe",
+    "count": 1
+  }
+}

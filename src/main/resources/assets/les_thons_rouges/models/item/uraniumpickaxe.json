@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "les_thons_rouges:items/pickaxe"
+  }
+}

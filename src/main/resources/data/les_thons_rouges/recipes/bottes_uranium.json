@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "2": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "3": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "5": {
+      "item": "les_thons_rouges:uraniumlingot"
+    }
+  },
+  "result": {
+    "item": "les_thons_rouges:uraniumarmure_boots",
+    "count": 1
+  }
+}

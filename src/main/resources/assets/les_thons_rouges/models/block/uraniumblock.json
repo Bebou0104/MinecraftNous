@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "les_thons_rouges:blocks/haut_ur",
+    "up": "les_thons_rouges:blocks/haut_ur",
+    "north": "les_thons_rouges:blocks/haut_ur",
+    "east": "les_thons_rouges:blocks/haut_ur",
+    "south": "les_thons_rouges:blocks/haut_ur",
+    "west": "les_thons_rouges:blocks/haut_ur",
+    "particle": "les_thons_rouges:blocks/haut_ur"
+  },
+  "render_type": "solid"
+}
