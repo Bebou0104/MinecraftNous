@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "les_thons_rouges:rafura"
+  },
+  "addition": {
+    "item": "les_thons_rouges:allorfer"
+  },
+  "result": {
+    "item": "les_thons_rouges:uraniumlingot"
+  }
+}
