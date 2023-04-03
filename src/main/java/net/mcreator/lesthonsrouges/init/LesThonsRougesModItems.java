@@ -20,6 +20,7 @@ import net.mcreator.lesthonsrouges.item.UraniumlingotItem;
 import net.mcreator.lesthonsrouges.item.UraniumarmureItem;
 import net.mcreator.lesthonsrouges.item.RafuraItem;
 import net.mcreator.lesthonsrouges.item.IronstickItem;
+import net.mcreator.lesthonsrouges.item.BatterieItem;
 import net.mcreator.lesthonsrouges.item.AllorferItem;
 import net.mcreator.lesthonsrouges.LesThonsRougesMod;
 
@@ -37,6 +38,7 @@ public class LesThonsRougesModItems {
 	public static final RegistryObject<Item> RAFURA = REGISTRY.register("rafura", () -> new RafuraItem());
 	public static final RegistryObject<Item> ALLORFER = REGISTRY.register("allorfer", () -> new AllorferItem());
 	public static final RegistryObject<Item> WEATHERMAKER = REGISTRY.register("weathermaker", () -> new WeathermakerItem());
+	public static final RegistryObject<Item> BATTERIE = REGISTRY.register("batterie", () -> new BatterieItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

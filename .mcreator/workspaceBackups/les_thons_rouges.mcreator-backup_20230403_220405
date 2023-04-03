@@ -305,6 +305,33 @@
           "src/main/resources/data/les_thons_rouges/recipes/uranium.json"
         ]
       }
+    },
+    {
+      "name": "Alliagefer",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alliagefer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/les_thons_rouges/recipes/alliage_fer_et_or.json"
+        ]
+      }
+    },
+    {
+      "name": "Weathermaker",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weathermaker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/les_thons_rouges/models/item/weathermaker.json",
+          "src/main/java/net/mcreator/lesthonsrouges/item/WeathermakerItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -312,14 +339,15 @@
   "language_map": {
     "en_us": {
       "item.les_thons_rouges.uraniumarmure_boots": "Bottes en Uranium",
-      "item.les_thons_rouges.uraniumsword": "épée d\u0027Uranium",
       "item.les_thons_rouges.uraniumarmure_helmet": "Casque en Uranium",
-      "item.les_thons_rouges.allorfer": "Alliage d\u0027or et de fer",
       "item.les_thons_rouges.ironstick": "tige de fer",
       "item.les_thons_rouges.uraniumarmure_chestplate": "Plastron en Uranium",
       "block.les_thons_rouges.uraniumblock": "block d\u0027Uranium",
-      "item.les_thons_rouges.uraniumlingot": "lingot d\u0027Uranium",
       "item.les_thons_rouges.rafura": "Uranium brut",
+      "item.les_thons_rouges.weathermaker": "Weathermaker2000",
+      "item.les_thons_rouges.uraniumsword": "épée d\u0027Uranium",
+      "item.les_thons_rouges.allorfer": "Alliage d\u0027or et de fer",
+      "item.les_thons_rouges.uraniumlingot": "lingot d\u0027Uranium",
       "item.les_thons_rouges.uraniumarmure_leggings": "Jambières en Uranium",
       "item.les_thons_rouges.uraniumpickaxe": "pioche d\u0027Uranium"
     }
