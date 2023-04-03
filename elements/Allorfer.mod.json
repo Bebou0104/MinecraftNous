@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "alliage",
     "customModelName": "Normal",
-    "name": "Allorfer",
+    "name": "Alliage d'or et de fer",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "MATERIALS"
     },
     "stackSize": 64,
     "enchantability": 0,
