@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.lesthonsrouges.init.LesThonsRougesModPaintings;
 import net.mcreator.lesthonsrouges.init.LesThonsRougesModItems;
 import net.mcreator.lesthonsrouges.init.LesThonsRougesModFeatures;
 import net.mcreator.lesthonsrouges.init.LesThonsRougesModBlocks;
@@ -56,6 +57,7 @@ public class LesThonsRougesMod {
 		LesThonsRougesModItems.REGISTRY.register(bus);
 
 		LesThonsRougesModFeatures.REGISTRY.register(bus);
+		LesThonsRougesModPaintings.REGISTRY.register(bus);
 
 	}
 

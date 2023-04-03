@@ -254,6 +254,16 @@
           "src/main/resources/data/les_thons_rouges/recipes/bottes_uranium.json"
         ]
       }
+    },
+    {
+      "name": "Naz",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "naz",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
