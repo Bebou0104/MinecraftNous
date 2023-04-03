@@ -9,12 +9,12 @@
       "registry_name": "uraniumblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/les_thons_rouges/models/item/uraniumblock.json",
           "src/main/resources/assets/les_thons_rouges/blockstates/uraniumblock.json",
-          "src/main/java/net/mcreator/lesthonsrouges/world/features/ores/UraniumblockFeature.java",
           "src/main/java/net/mcreator/lesthonsrouges/block/UraniumblockBlock.java",
-          "src/main/resources/assets/les_thons_rouges/models/block/uraniumblock.json",
-          "src/main/resources/data/les_thons_rouges/forge/biome_modifier/uraniumblock_biome_modifier.json"
+          "src/main/resources/data/les_thons_rouges/forge/biome_modifier/uraniumblock_biome_modifier.json",
+          "src/main/java/net/mcreator/lesthonsrouges/world/features/ores/UraniumblockFeature.java",
+          "src/main/resources/assets/les_thons_rouges/models/item/uraniumblock.json",
+          "src/main/resources/assets/les_thons_rouges/models/block/uraniumblock.json"
         ]
       }
     },
@@ -27,8 +27,8 @@
       "registry_name": "uraniumlingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/les_thons_rouges/models/item/uraniumlingot.json",
-          "src/main/java/net/mcreator/lesthonsrouges/item/UraniumlingotItem.java"
+          "src/main/java/net/mcreator/lesthonsrouges/item/UraniumlingotItem.java",
+          "src/main/resources/assets/les_thons_rouges/models/item/uraniumlingot.json"
         ]
       }
     },
@@ -41,8 +41,8 @@
       "registry_name": "uraniumsword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/les_thons_rouges/models/item/uraniumsword.json",
-          "src/main/java/net/mcreator/lesthonsrouges/item/UraniumswordItem.java"
+          "src/main/java/net/mcreator/lesthonsrouges/item/UraniumswordItem.java",
+          "src/main/resources/assets/les_thons_rouges/models/item/uraniumsword.json"
         ]
       }
     },
@@ -228,6 +228,42 @@
           "src/main/resources/data/les_thons_rouges/recipes/plastron_uranium.json"
         ]
       }
+    },
+    {
+      "name": "Jambiereura",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jambiereura",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/les_thons_rouges/recipes/jambiere_uranium.json"
+        ]
+      }
+    },
+    {
+      "name": "Piedsura",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piedsura",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/les_thons_rouges/recipes/bottes_uranium.json"
+        ]
+      }
+    },
+    {
+      "name": "Naz",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "naz",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
@@ -235,11 +271,11 @@
   "language_map": {
     "en_us": {
       "item.les_thons_rouges.uraniumarmure_boots": "Bottes en Uranium",
+      "item.les_thons_rouges.uraniumsword": "épée d\u0027Uranium",
       "item.les_thons_rouges.uraniumarmure_helmet": "Casque en Uranium",
       "item.les_thons_rouges.ironstick": "tige de fer",
       "item.les_thons_rouges.uraniumarmure_chestplate": "Plastron en Uranium",
       "block.les_thons_rouges.uraniumblock": "block d\u0027Uranium",
-      "item.les_thons_rouges.uraniumsword": "épée d\u0027Uranium",
       "item.les_thons_rouges.uraniumlingot": "lingot d\u0027Uranium",
       "item.les_thons_rouges.uraniumarmure_leggings": "Jambières en Uranium",
       "item.les_thons_rouges.uraniumpickaxe": "pioche d\u0027Uranium"
@@ -261,8 +297,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "mcreator_link"
+    ],
     "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.lesthonsrouges",
     "lockBaseModFiles": false
   },
