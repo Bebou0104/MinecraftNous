@@ -266,20 +266,6 @@
       }
     },
     {
-      "name": "Rafura",
-      "type": "item",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rafura",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/les_thons_rouges/models/item/rafura.json",
-          "src/main/java/net/mcreator/lesthonsrouges/item/RafuraItem.java"
-        ]
-      }
-    },
-    {
       "name": "Allorfer",
       "type": "item",
       "sortid": 18,
@@ -301,6 +287,7 @@
       "item.les_thons_rouges.uraniumarmure_boots": "Bottes en Uranium",
       "item.les_thons_rouges.uraniumsword": "épée d\u0027Uranium",
       "item.les_thons_rouges.uraniumarmure_helmet": "Casque en Uranium",
+      "item.les_thons_rouges.allorfer": "Allorfer",
       "item.les_thons_rouges.ironstick": "tige de fer",
       "item.les_thons_rouges.uraniumarmure_chestplate": "Plastron en Uranium",
       "block.les_thons_rouges.uraniumblock": "block d\u0027Uranium",
