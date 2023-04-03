@@ -264,6 +264,34 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "Rafura",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rafura",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/les_thons_rouges/models/item/rafura.json",
+          "src/main/java/net/mcreator/lesthonsrouges/item/RafuraItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Allorfer",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allorfer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/les_thons_rouges/models/item/allorfer.json",
+          "src/main/java/net/mcreator/lesthonsrouges/item/AllorferItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
