@@ -23,7 +23,7 @@ public class UraniumpickaxeItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 11f;
+				return 20f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -31,17 +31,17 @@ public class UraniumpickaxeItem extends PickaxeItem {
 			}
 
 			public int getLevel() {
-				return 5;
+				return 6;
 			}
 
 			public int getEnchantmentValue() {
-				return 19;
+				return 20;
 			}
 
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(LesThonsRougesModItems.URANIUMLINGOT.get()));
 			}
-		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
+		}, 1, -2.5f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
 	}
 
 	@Override
