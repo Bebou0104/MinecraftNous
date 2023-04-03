@@ -18,5 +18,11 @@ authors="bebou, MCreator"
     side="BOTH"
 
 
+[[dependencies.les_thons_rouges]]
+    modId="mcreator_link"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 

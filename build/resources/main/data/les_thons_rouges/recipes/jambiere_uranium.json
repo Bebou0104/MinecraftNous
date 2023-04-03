@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "1": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "2": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "3": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "5": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "6": {
+      "item": "les_thons_rouges:uraniumlingot"
+    },
+    "8": {
+      "item": "les_thons_rouges:uraniumlingot"
+    }
+  },
+  "result": {
+    "item": "les_thons_rouges:uraniumarmure_leggings",
+    "count": 1
+  }
+}
