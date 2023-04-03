@@ -264,6 +264,47 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "Rafura",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rafura",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/les_thons_rouges/models/item/rafura.json",
+          "src/main/java/net/mcreator/lesthonsrouges/item/RafuraItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Allorfer",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allorfer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/les_thons_rouges/models/item/allorfer.json",
+          "src/main/java/net/mcreator/lesthonsrouges/item/AllorferItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Rlingraf",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rlingraf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/les_thons_rouges/recipes/uranium.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -273,10 +314,12 @@
       "item.les_thons_rouges.uraniumarmure_boots": "Bottes en Uranium",
       "item.les_thons_rouges.uraniumsword": "épée d\u0027Uranium",
       "item.les_thons_rouges.uraniumarmure_helmet": "Casque en Uranium",
+      "item.les_thons_rouges.allorfer": "Alliage d\u0027or et de fer",
       "item.les_thons_rouges.ironstick": "tige de fer",
       "item.les_thons_rouges.uraniumarmure_chestplate": "Plastron en Uranium",
       "block.les_thons_rouges.uraniumblock": "block d\u0027Uranium",
       "item.les_thons_rouges.uraniumlingot": "lingot d\u0027Uranium",
+      "item.les_thons_rouges.rafura": "Uranium brut",
       "item.les_thons_rouges.uraniumarmure_leggings": "Jambières en Uranium",
       "item.les_thons_rouges.uraniumpickaxe": "pioche d\u0027Uranium"
     }
