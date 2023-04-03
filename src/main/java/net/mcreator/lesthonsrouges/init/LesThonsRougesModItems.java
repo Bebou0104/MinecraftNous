@@ -18,6 +18,7 @@ import net.mcreator.lesthonsrouges.item.UraniumpickaxeItem;
 import net.mcreator.lesthonsrouges.item.UraniumlingotItem;
 import net.mcreator.lesthonsrouges.item.UraniumarmureItem;
 import net.mcreator.lesthonsrouges.item.IronstickItem;
+import net.mcreator.lesthonsrouges.item.AllorferItem;
 import net.mcreator.lesthonsrouges.LesThonsRougesMod;
 
 public class LesThonsRougesModItems {
@@ -31,6 +32,7 @@ public class LesThonsRougesModItems {
 	public static final RegistryObject<Item> URANIUMARMURE_CHESTPLATE = REGISTRY.register("uraniumarmure_chestplate", () -> new UraniumarmureItem.Chestplate());
 	public static final RegistryObject<Item> URANIUMARMURE_LEGGINGS = REGISTRY.register("uraniumarmure_leggings", () -> new UraniumarmureItem.Leggings());
 	public static final RegistryObject<Item> URANIUMARMURE_BOOTS = REGISTRY.register("uraniumarmure_boots", () -> new UraniumarmureItem.Boots());
+	public static final RegistryObject<Item> ALLORFER = REGISTRY.register("allorfer", () -> new AllorferItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
