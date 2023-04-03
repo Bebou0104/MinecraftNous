@@ -264,6 +264,20 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "Rafura",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rafura",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/les_thons_rouges/models/item/rafura.json",
+          "src/main/java/net/mcreator/lesthonsrouges/item/RafuraItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -277,6 +291,7 @@
       "item.les_thons_rouges.uraniumarmure_chestplate": "Plastron en Uranium",
       "block.les_thons_rouges.uraniumblock": "block d\u0027Uranium",
       "item.les_thons_rouges.uraniumlingot": "lingot d\u0027Uranium",
+      "item.les_thons_rouges.rafura": "Uranium brut",
       "item.les_thons_rouges.uraniumarmure_leggings": "Jambières en Uranium",
       "item.les_thons_rouges.uraniumpickaxe": "pioche d\u0027Uranium"
     }
