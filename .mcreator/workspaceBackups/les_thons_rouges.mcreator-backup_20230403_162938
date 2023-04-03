@@ -294,19 +294,6 @@
       }
     },
     {
-      "name": "Rlingraf",
-      "type": "recipe",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rlingraf",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/les_thons_rouges/recipes/uranium.json"
-        ]
-      }
-    },
-    {
       "name": "Alliagefer",
       "type": "recipe",
       "sortid": 19,
