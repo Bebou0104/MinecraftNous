@@ -7,7 +7,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
@@ -17,6 +16,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.lesthonsrouges.procedures.ArmureProcedure;
+import net.mcreator.lesthonsrouges.init.LesThonsRougesModTabs;
 import net.mcreator.lesthonsrouges.init.LesThonsRougesModItems;
 
 public abstract class UraniumarmureItem extends ArmorItem {
@@ -66,7 +66,7 @@ public abstract class UraniumarmureItem extends ArmorItem {
 
 	public static class Helmet extends UraniumarmureItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(LesThonsRougesModTabs.TAB_URATECH).fireResistant());
 		}
 
 		@Override
@@ -82,7 +82,7 @@ public abstract class UraniumarmureItem extends ArmorItem {
 
 	public static class Chestplate extends UraniumarmureItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(LesThonsRougesModTabs.TAB_URATECH).fireResistant());
 		}
 
 		@Override
@@ -98,7 +98,7 @@ public abstract class UraniumarmureItem extends ArmorItem {
 
 	public static class Leggings extends UraniumarmureItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(LesThonsRougesModTabs.TAB_URATECH).fireResistant());
 		}
 
 		@Override
@@ -114,7 +114,7 @@ public abstract class UraniumarmureItem extends ArmorItem {
 
 	public static class Boots extends UraniumarmureItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
+			super(EquipmentSlot.FEET, new Item.Properties().tab(LesThonsRougesModTabs.TAB_URATECH).fireResistant());
 		}
 
 		@Override

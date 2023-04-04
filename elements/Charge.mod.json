@@ -42,7 +42,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 251,
+          "x": 264,
           "y": 68
         }
       },
@@ -56,8 +56,53 @@
           },
           "width": 61,
           "height": 20,
-          "x": 175,
-          "y": 92
+          "x": 177,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chargeur",
+          "text": {
+            "fixedValue": "chargeur"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 189,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_pile",
+          "text": {
+            "fixedValue": "pile"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 146,
+          "y": 90
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_aooareil",
+          "text": {
+            "fixedValue": "appareil"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 250,
+          "y": 89
         }
       }
     ],

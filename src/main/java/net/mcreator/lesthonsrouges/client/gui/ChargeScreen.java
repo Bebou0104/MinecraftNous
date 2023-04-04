@@ -71,6 +71,9 @@ public class ChargeScreen extends AbstractContainerScreen<ChargeMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+		this.font.draw(poseStack, Component.translatable("gui.les_thons_rouges.charge.label_chargeur"), 63, 9, -256);
+		this.font.draw(poseStack, Component.translatable("gui.les_thons_rouges.charge.label_pile"), 20, 53, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.les_thons_rouges.charge.label_aooareil"), 124, 52, -12829636);
 	}
 
 	@Override
@@ -83,7 +86,7 @@ public class ChargeScreen extends AbstractContainerScreen<ChargeMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		button_charger = new Button(this.leftPos + 49, this.topPos + 55, 61, 20, Component.translatable("gui.les_thons_rouges.charge.button_charger"), e -> {
+		button_charger = new Button(this.leftPos + 51, this.topPos + 57, 61, 20, Component.translatable("gui.les_thons_rouges.charge.button_charger"), e -> {
 			if (true) {
 				LesThonsRougesMod.PACKET_HANDLER.sendToServer(new ChargeButtonMessage(0, x, y, z));
 				ChargeButtonMessage.handleButtonAction(entity, 0, x, y, z);

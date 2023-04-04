@@ -8,7 +8,7 @@
     "name": "épée d'Uranium",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Uratech"
     },
     "toolType": "Sword",
     "harvestLevel": 4,

@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.lesthonsrouges.init.LesThonsRougesModTabs;
 import net.mcreator.lesthonsrouges.init.LesThonsRougesModMenus;
 import net.mcreator.lesthonsrouges.init.LesThonsRougesModItems;
 import net.mcreator.lesthonsrouges.init.LesThonsRougesModFeatures;
@@ -50,7 +51,7 @@ public class LesThonsRougesMod {
 
 	public LesThonsRougesMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-
+		LesThonsRougesModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		LesThonsRougesModBlocks.REGISTRY.register(bus);

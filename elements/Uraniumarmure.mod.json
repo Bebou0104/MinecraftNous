@@ -23,7 +23,7 @@
       "name": "Armure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Uratech"
     },
     "armorTextureFile": "ura",
     "helmetName": "Casque en Uranium",

@@ -6,10 +6,10 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.LivingEntity;
 
 import net.mcreator.lesthonsrouges.procedures.PoisonProcedure;
+import net.mcreator.lesthonsrouges.init.LesThonsRougesModTabs;
 import net.mcreator.lesthonsrouges.init.LesThonsRougesModItems;
 
 public class UraniumswordItem extends SwordItem {
@@ -38,7 +38,7 @@ public class UraniumswordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(LesThonsRougesModItems.URANIUMLINGOT.get()));
 			}
-		}, 3, -2.5f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
+		}, 3, -2.5f, new Item.Properties().tab(LesThonsRougesModTabs.TAB_URATECH).fireResistant());
 	}
 
 	@Override

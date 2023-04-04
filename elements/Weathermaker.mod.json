@@ -7,10 +7,10 @@
     "customModelName": "Normal",
     "name": "Weathermaker2000",
     "specialInfo": [
-      "it's truly diabolical"
+      "?????????????????????"
     ],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Uratech"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 1,
@@ -21,7 +21,11 @@
     "usageCount": 50,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Batteiredecharge"
+      }
+    ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,

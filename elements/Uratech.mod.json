@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "Uratech",
+    "icon": {
+      "value": "CUSTOM:Uraniumlingot"
+    },
+    "showSearch": false
+  }
+}

@@ -82,7 +82,7 @@ public class ChargeMenu extends AbstractContainerMenu implements Supplier<Map<In
 				return LesThonsRougesModItems.BATTERIE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 126, 32) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 139, 32) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return LesThonsRougesModItems.WEATHERMAKER.get() == stack.getItem();

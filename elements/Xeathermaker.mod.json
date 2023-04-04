@@ -30,6 +30,9 @@
         "data": {
           "name": "button_jour",
           "text": "jour",
+          "onClick": {
+            "name": "Day"
+          },
           "width": 46,
           "height": 20,
           "x": 134,
@@ -41,6 +44,9 @@
         "data": {
           "name": "button_nuit",
           "text": "nuit",
+          "onClick": {
+            "name": "Night"
+          },
           "width": 46,
           "height": 20,
           "x": 242,
@@ -52,6 +58,9 @@
         "data": {
           "name": "button_soleil",
           "text": "soleil",
+          "onClick": {
+            "name": "Clear"
+          },
           "width": 56,
           "height": 20,
           "x": 131,
@@ -63,6 +72,9 @@
         "data": {
           "name": "button_pluie",
           "text": "pluie",
+          "onClick": {
+            "name": "Rain"
+          },
           "width": 51,
           "height": 20,
           "x": 238,
@@ -74,6 +86,9 @@
         "data": {
           "name": "button_orage",
           "text": "orage",
+          "onClick": {
+            "name": "Thunder"
+          },
           "width": 51,
           "height": 20,
           "x": 185,

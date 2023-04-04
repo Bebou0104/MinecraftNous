@@ -8,7 +8,7 @@
     "name": "Batterie déchargée",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Uratech"
     },
     "stackSize": 64,
     "enchantability": 0,

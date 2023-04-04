@@ -29,7 +29,7 @@ import net.mcreator.lesthonsrouges.LesThonsRougesMod;
 public class LesThonsRougesModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, LesThonsRougesMod.MODID);
 	public static final RegistryObject<Item> URANIUMLINGOT = REGISTRY.register("uraniumlingot", () -> new UraniumlingotItem());
-	public static final RegistryObject<Item> URANIUMBLOCK = block(LesThonsRougesModBlocks.URANIUMBLOCK, CreativeModeTab.TAB_MATERIALS);
+	public static final RegistryObject<Item> URANIUMBLOCK = block(LesThonsRougesModBlocks.URANIUMBLOCK, LesThonsRougesModTabs.TAB_URATECH);
 	public static final RegistryObject<Item> URANIUMSWORD = REGISTRY.register("uraniumsword", () -> new UraniumswordItem());
 	public static final RegistryObject<Item> URANIUMPICKAXE = REGISTRY.register("uraniumpickaxe", () -> new UraniumpickaxeItem());
 	public static final RegistryObject<Item> IRONSTICK = REGISTRY.register("ironstick", () -> new IronstickItem());

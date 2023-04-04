@@ -8,7 +8,7 @@
     "name": "lingot d'Uranium",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:Uratech"
     },
     "stackSize": 32,
     "enchantability": 0,

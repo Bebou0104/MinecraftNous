@@ -6,14 +6,15 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
+
+import net.mcreator.lesthonsrouges.init.LesThonsRougesModTabs;
 
 import java.util.List;
 
 public class BatteiredechargeItem extends Item {
 	public BatteiredechargeItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(LesThonsRougesModTabs.TAB_URATECH).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

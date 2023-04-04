@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "alliage",
     "customModelName": "Normal",
-    "name": "Alliage d'or et de fer",
+    "name": "Alliage de rafinage",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:Uratech"
     },
     "stackSize": 64,
     "enchantability": 0,

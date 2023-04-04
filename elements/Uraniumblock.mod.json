@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:Uratech"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
