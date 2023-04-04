@@ -9,12 +9,12 @@
       "registry_name": "uraniumblock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/lesthonsrouges/world/features/ores/UraniumblockFeature.java",
           "src/main/resources/assets/les_thons_rouges/blockstates/uraniumblock.json",
           "src/main/resources/data/les_thons_rouges/forge/biome_modifier/uraniumblock_biome_modifier.json",
-          "src/main/resources/assets/les_thons_rouges/models/item/uraniumblock.json",
           "src/main/resources/assets/les_thons_rouges/models/block/uraniumblock.json",
-          "src/main/java/net/mcreator/lesthonsrouges/block/UraniumblockBlock.java"
+          "src/main/java/net/mcreator/lesthonsrouges/world/features/ores/UraniumblockFeature.java",
+          "src/main/java/net/mcreator/lesthonsrouges/block/UraniumblockBlock.java",
+          "src/main/resources/assets/les_thons_rouges/models/item/uraniumblock.json"
         ]
       }
     },
@@ -69,8 +69,8 @@
       "registry_name": "ironstick",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/lesthonsrouges/item/IronstickItem.java",
-          "src/main/resources/assets/les_thons_rouges/models/item/ironstick.json"
+          "src/main/resources/assets/les_thons_rouges/models/item/ironstick.json",
+          "src/main/java/net/mcreator/lesthonsrouges/item/IronstickItem.java"
         ]
       }
     },
@@ -195,11 +195,11 @@
       "registry_name": "uraniumarmure",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/lesthonsrouges/item/UraniumarmureItem.java",
-          "src/main/resources/assets/les_thons_rouges/models/item/uraniumarmure_helmet.json",
+          "src/main/resources/assets/les_thons_rouges/models/item/uraniumarmure_boots.json",
           "src/main/resources/assets/les_thons_rouges/models/item/uraniumarmure_leggings.json",
+          "src/main/java/net/mcreator/lesthonsrouges/item/UraniumarmureItem.java",
           "src/main/resources/assets/les_thons_rouges/models/item/uraniumarmure_chestplate.json",
-          "src/main/resources/assets/les_thons_rouges/models/item/uraniumarmure_boots.json"
+          "src/main/resources/assets/les_thons_rouges/models/item/uraniumarmure_helmet.json"
         ]
       }
     },
@@ -324,20 +324,6 @@
       }
     },
     {
-      "name": "Batterie",
-      "type": "item",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "batterie",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lesthonsrouges/item/BatterieItem.java",
-          "src/main/resources/assets/les_thons_rouges/models/item/batterie.json"
-        ]
-      }
-    },
-    {
       "name": "Batteiredecharge",
       "type": "item",
       "sortid": 22,
@@ -346,21 +332,8 @@
       "registry_name": "batteiredecharge",
       "metadata": {
         "files": [
-          "src/main/resources/assets/les_thons_rouges/models/item/batteiredecharge.json",
-          "src/main/java/net/mcreator/lesthonsrouges/item/BatteiredechargeItem.java"
-        ]
-      }
-    },
-    {
-      "name": "Rbatteire",
-      "type": "recipe",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rbatteire",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lesthonsrouges/recipes/brewing/RbatteireBrewingRecipe.java"
+          "src/main/java/net/mcreator/lesthonsrouges/item/BatteiredechargeItem.java",
+          "src/main/resources/assets/les_thons_rouges/models/item/batteiredecharge.json"
         ]
       }
     },
@@ -522,6 +495,7 @@
     {
       "name": "Xeathermaker",
       "type": "gui",
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "xeathermaker",
@@ -545,9 +519,77 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "Gui",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lesthonsrouges/procedures/GuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Batterie",
+      "type": "item",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batterie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lesthonsrouges/item/BatterieItem.java",
+          "src/main/resources/assets/les_thons_rouges/models/item/batterie.json"
+        ]
+      }
+    },
+    {
+      "name": "Charge",
+      "type": "gui",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lesthonsrouges/network/ChargeButtonMessage.java",
+          "src/main/java/net/mcreator/lesthonsrouges/world/inventory/ChargeMenu.java",
+          "src/main/java/net/mcreator/lesthonsrouges/client/gui/ChargeScreen.java"
         ]
       }
     }
@@ -556,22 +598,23 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.les_thons_rouges.uraniumarmure_boots": "Bottes en Uranium",
       "item.les_thons_rouges.uraniumarmure_helmet": "Casque en Uranium",
       "item.les_thons_rouges.ironstick": "tige de fer",
       "item.les_thons_rouges.uraniumarmure_chestplate": "Plastron en Uranium",
-      "gui.les_thons_rouges.xeathermaker.label_weather_maker_2000": "weather maker 2000",
       "block.les_thons_rouges.uraniumblock": "block d\u0027Uranium",
-      "gui.les_thons_rouges.xeathermaker.button_nuit": "nuit",
       "item.les_thons_rouges.rafura": "Uranium brut",
+      "gui.les_thons_rouges.xeathermaker.button_orage": "orage",
+      "gui.les_thons_rouges.charge.button_charger": "charger",
+      "item.les_thons_rouges.uraniumarmure_boots": "Bottes en Uranium",
+      "gui.les_thons_rouges.xeathermaker.label_weather_maker_2000": "weather maker 2000",
+      "gui.les_thons_rouges.xeathermaker.button_nuit": "nuit",
       "item.les_thons_rouges.batterie": "Batterie",
       "item.les_thons_rouges.weathermaker": "Weathermaker2000",
       "gui.les_thons_rouges.xeathermaker.button_soleil": "soleil",
       "item.les_thons_rouges.uraniumsword": "épée d\u0027Uranium",
       "gui.les_thons_rouges.xeathermaker.button_jour": "jour",
+      "item.les_thons_rouges.batteiredecharge": "Batterie déchargée",
       "item.les_thons_rouges.allorfer": "Alliage d\u0027or et de fer",
-      "item.les_thons_rouges.batteiredecharge": "Batterie",
-      "gui.les_thons_rouges.xeathermaker.button_orage": "orage",
       "item.les_thons_rouges.uraniumlingot": "lingot d\u0027Uranium",
       "item.les_thons_rouges.uraniumarmure_leggings": "Jambières en Uranium",
       "item.les_thons_rouges.uraniumpickaxe": "pioche d\u0027Uranium",

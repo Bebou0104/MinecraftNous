@@ -25,7 +25,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class RechargeMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class ChargeMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -34,8 +34,8 @@ public class RechargeMenu extends AbstractContainerMenu implements Supplier<Map<
 	private final Map<Integer, Slot> customSlots = new HashMap<>();
 	private boolean bound = false;
 
-	public RechargeMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(LesThonsRougesModMenus.RECHARGE.get(), id);
+	public ChargeMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(LesThonsRougesModMenus.CHARGE.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(2);
@@ -76,13 +76,13 @@ public class RechargeMenu extends AbstractContainerMenu implements Supplier<Map<
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 31, 28) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 23, 32) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return LesThonsRougesModItems.BATTERIE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 130, 28) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 126, 32) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return LesThonsRougesModItems.WEATHERMAKER.get() == stack.getItem();

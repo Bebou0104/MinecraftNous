@@ -9,8 +9,8 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.lesthonsrouges.world.inventory.RechargeMenu;
-import net.mcreator.lesthonsrouges.network.RechargeButtonMessage;
+import net.mcreator.lesthonsrouges.world.inventory.ChargeMenu;
+import net.mcreator.lesthonsrouges.network.ChargeButtonMessage;
 import net.mcreator.lesthonsrouges.LesThonsRougesMod;
 
 import java.util.HashMap;
@@ -18,14 +18,14 @@ import java.util.HashMap;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class RechargeScreen extends AbstractContainerScreen<RechargeMenu> {
-	private final static HashMap<String, Object> guistate = RechargeMenu.guistate;
+public class ChargeScreen extends AbstractContainerScreen<ChargeMenu> {
+	private final static HashMap<String, Object> guistate = ChargeMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 	Button button_charger;
 
-	public RechargeScreen(RechargeMenu container, Inventory inventory, Component text) {
+	public ChargeScreen(ChargeMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -36,7 +36,7 @@ public class RechargeScreen extends AbstractContainerScreen<RechargeMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("les_thons_rouges:textures/screens/recharge.png");
+	private static final ResourceLocation texture = new ResourceLocation("les_thons_rouges:textures/screens/charge.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -71,9 +71,6 @@ public class RechargeScreen extends AbstractContainerScreen<RechargeMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.les_thons_rouges.recharge.label_rechargement"), 50, 6, -154);
-		this.font.draw(poseStack, Component.translatable("gui.les_thons_rouges.recharge.label_batterie"), 18, 47, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.les_thons_rouges.recharge.label_appareil"), 120, 47, -12829636);
 	}
 
 	@Override
@@ -86,10 +83,10 @@ public class RechargeScreen extends AbstractContainerScreen<RechargeMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		button_charger = new Button(this.leftPos + 51, this.topPos + 61, 61, 20, Component.translatable("gui.les_thons_rouges.recharge.button_charger"), e -> {
+		button_charger = new Button(this.leftPos + 49, this.topPos + 55, 61, 20, Component.translatable("gui.les_thons_rouges.charge.button_charger"), e -> {
 			if (true) {
-				LesThonsRougesMod.PACKET_HANDLER.sendToServer(new RechargeButtonMessage(0, x, y, z));
-				RechargeButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				LesThonsRougesMod.PACKET_HANDLER.sendToServer(new ChargeButtonMessage(0, x, y, z));
+				ChargeButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		});
 		guistate.put("button:button_charger", button_charger);

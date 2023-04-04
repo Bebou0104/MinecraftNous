@@ -12,15 +12,15 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.lesthonsrouges.client.gui.XeathermakerScreen;
-import net.mcreator.lesthonsrouges.client.gui.RechargeScreen;
+import net.mcreator.lesthonsrouges.client.gui.ChargeScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class LesThonsRougesModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(LesThonsRougesModMenus.RECHARGE.get(), RechargeScreen::new);
 			MenuScreens.register(LesThonsRougesModMenus.XEATHERMAKER.get(), XeathermakerScreen::new);
+			MenuScreens.register(LesThonsRougesModMenus.CHARGE.get(), ChargeScreen::new);
 		});
 	}
 }

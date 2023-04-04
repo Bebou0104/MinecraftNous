@@ -16,7 +16,7 @@ public class GuiProcedure {
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 			ItemStack stack = ((Slot) _slots.get(1)).getItem();
 			if (stack != null) {
-				if (stack.hurt((int) (10 * new Object() {
+				if (stack.hurt((int) ((-10) * new Object() {
 					public int getAmount(int sltid) {
 						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();

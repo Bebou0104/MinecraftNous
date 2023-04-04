@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.lesthonsrouges.world.inventory.RechargeMenu;
+import net.mcreator.lesthonsrouges.world.inventory.ChargeMenu;
 import net.mcreator.lesthonsrouges.procedures.GuiProcedure;
 import net.mcreator.lesthonsrouges.LesThonsRougesMod;
 
@@ -19,31 +19,31 @@ import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class RechargeButtonMessage {
+public class ChargeButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public RechargeButtonMessage(FriendlyByteBuf buffer) {
+	public ChargeButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public RechargeButtonMessage(int buttonID, int x, int y, int z) {
+	public ChargeButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(RechargeButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(ChargeButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(RechargeButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(ChargeButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -58,7 +58,7 @@ public class RechargeButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level;
-		HashMap guistate = RechargeMenu.guistate;
+		HashMap guistate = ChargeMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
@@ -70,6 +70,6 @@ public class RechargeButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		LesThonsRougesMod.addNetworkMessage(RechargeButtonMessage.class, RechargeButtonMessage::buffer, RechargeButtonMessage::new, RechargeButtonMessage::handler);
+		LesThonsRougesMod.addNetworkMessage(ChargeButtonMessage.class, ChargeButtonMessage::buffer, ChargeButtonMessage::new, ChargeButtonMessage::handler);
 	}
 }
