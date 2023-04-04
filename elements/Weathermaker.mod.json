@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Weathermaker2000",
     "specialInfo": [
-      "?????????????????????"
+      "it's truly diabolical"
     ],
     "creativeTab": {
       "value": "TOOLS"
@@ -21,13 +21,12 @@
     "usageCount": 50,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [
-      {
-        "value": "CUSTOM:Batteiredecharge"
-      }
-    ],
+    "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "Dura"
+    }
   }
 }

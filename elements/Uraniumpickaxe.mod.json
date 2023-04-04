@@ -27,6 +27,9 @@
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "Dura"
+    },
     "onBlockDestroyedWithTool": {
       "name": "Uranium"
     }

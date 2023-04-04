@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "batterie",
     "customModelName": "Normal",
-    "name": "Batterie",
+    "name": "Batterie déchargée",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"

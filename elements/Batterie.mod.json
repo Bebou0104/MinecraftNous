@@ -28,7 +28,7 @@
       "rechargez vos appareils électriques"
     ],
     "hasGlow": false,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "Recharge",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "isFood": false,
