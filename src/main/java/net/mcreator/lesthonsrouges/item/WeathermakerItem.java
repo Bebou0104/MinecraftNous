@@ -39,7 +39,7 @@ public class WeathermakerItem extends PickaxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(LesThonsRougesModItems.URANIUMLINGOT.get()));
+				return Ingredient.of(new ItemStack(LesThonsRougesModItems.BATTEIREDECHARGE.get()));
 			}
 		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}

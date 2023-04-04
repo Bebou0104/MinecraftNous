@@ -1,0 +1,23 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "CUSTOM:Batteiredecharge"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:Uraniumlingot"
+    },
+    "brewingReturnStack": {
+      "value": "CUSTOM:Batterie"
+    },
+    "name": "rbatterie",
+    "namespace": "mod"
+  }
+}

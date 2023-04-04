@@ -9,12 +9,12 @@
       "registry_name": "uraniumblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/les_thons_rouges/blockstates/uraniumblock.json",
-          "src/main/java/net/mcreator/lesthonsrouges/block/UraniumblockBlock.java",
-          "src/main/resources/data/les_thons_rouges/forge/biome_modifier/uraniumblock_biome_modifier.json",
           "src/main/java/net/mcreator/lesthonsrouges/world/features/ores/UraniumblockFeature.java",
+          "src/main/resources/assets/les_thons_rouges/blockstates/uraniumblock.json",
+          "src/main/resources/data/les_thons_rouges/forge/biome_modifier/uraniumblock_biome_modifier.json",
           "src/main/resources/assets/les_thons_rouges/models/item/uraniumblock.json",
-          "src/main/resources/assets/les_thons_rouges/models/block/uraniumblock.json"
+          "src/main/resources/assets/les_thons_rouges/models/block/uraniumblock.json",
+          "src/main/java/net/mcreator/lesthonsrouges/block/UraniumblockBlock.java"
         ]
       }
     },
@@ -256,16 +256,6 @@
       }
     },
     {
-      "name": "Naz",
-      "type": "painting",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "naz",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "Rafura",
       "type": "item",
       "sortid": 18,
@@ -328,8 +318,8 @@
       "registry_name": "weathermaker",
       "metadata": {
         "files": [
-          "src/main/resources/assets/les_thons_rouges/models/item/weathermaker.json",
-          "src/main/java/net/mcreator/lesthonsrouges/item/WeathermakerItem.java"
+          "src/main/java/net/mcreator/lesthonsrouges/item/WeathermakerItem.java",
+          "src/main/resources/assets/les_thons_rouges/models/item/weathermaker.json"
         ]
       }
     },
@@ -344,6 +334,188 @@
         "files": [
           "src/main/java/net/mcreator/lesthonsrouges/item/BatterieItem.java",
           "src/main/resources/assets/les_thons_rouges/models/item/batterie.json"
+        ]
+      }
+    },
+    {
+      "name": "Batteiredecharge",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batteiredecharge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/les_thons_rouges/models/item/batteiredecharge.json",
+          "src/main/java/net/mcreator/lesthonsrouges/item/BatteiredechargeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Rbatteire",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rbatteire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lesthonsrouges/recipes/brewing/RbatteireBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "Day",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lesthonsrouges/procedures/DayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Night",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lesthonsrouges/procedures/NightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Thunder",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lesthonsrouges/procedures/ThunderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rain",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rain",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lesthonsrouges/procedures/RainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Clear",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lesthonsrouges/procedures/ClearProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -362,6 +534,7 @@
       "item.les_thons_rouges.weathermaker": "Weathermaker2000",
       "item.les_thons_rouges.uraniumsword": "épée d\u0027Uranium",
       "item.les_thons_rouges.allorfer": "Alliage d\u0027or et de fer",
+      "item.les_thons_rouges.batteiredecharge": "Batterie",
       "item.les_thons_rouges.uraniumlingot": "lingot d\u0027Uranium",
       "item.les_thons_rouges.uraniumarmure_leggings": "Jambières en Uranium",
       "item.les_thons_rouges.uraniumpickaxe": "pioche d\u0027Uranium"
