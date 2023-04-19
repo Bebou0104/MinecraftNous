@@ -34,9 +34,9 @@ public class UraniumblockFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new UraniumblockFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("les_thons_rouges:uraniumblock", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), LesThonsRougesModBlocks.URANIUMBLOCK.get().defaultBlockState())), 4));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), LesThonsRougesModBlocks.URANIUMBLOCK.get().defaultBlockState())), 50));
 		PLACED_FEATURE = PlacementUtils.register("les_thons_rouges:uraniumblock", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(10), InSquarePlacement.spread(), HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(24)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(30), InSquarePlacement.spread(), HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(24)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
