@@ -9,12 +9,12 @@
       "registry_name": "uraniumblock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/lesthonsrouges/world/features/ores/UraniumblockFeature.java",
           "src/main/resources/assets/les_thons_rouges/blockstates/uraniumblock.json",
           "src/main/resources/data/les_thons_rouges/forge/biome_modifier/uraniumblock_biome_modifier.json",
-          "src/main/resources/assets/les_thons_rouges/models/item/uraniumblock.json",
           "src/main/resources/assets/les_thons_rouges/models/block/uraniumblock.json",
-          "src/main/java/net/mcreator/lesthonsrouges/block/UraniumblockBlock.java"
+          "src/main/java/net/mcreator/lesthonsrouges/world/features/ores/UraniumblockFeature.java",
+          "src/main/java/net/mcreator/lesthonsrouges/block/UraniumblockBlock.java",
+          "src/main/resources/assets/les_thons_rouges/models/item/uraniumblock.json"
         ]
       }
     },
@@ -332,8 +332,8 @@
       "registry_name": "batteiredecharge",
       "metadata": {
         "files": [
-          "src/main/resources/assets/les_thons_rouges/models/item/batteiredecharge.json",
-          "src/main/java/net/mcreator/lesthonsrouges/item/BatteiredechargeItem.java"
+          "src/main/java/net/mcreator/lesthonsrouges/item/BatteiredechargeItem.java",
+          "src/main/resources/assets/les_thons_rouges/models/item/batteiredecharge.json"
         ]
       }
     },

@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "batterie",
+    "texture": "batteriedech",
     "customModelName": "Normal",
     "name": "Batterie déchargée",
     "rarity": "COMMON",
